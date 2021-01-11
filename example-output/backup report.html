@@ -177,7 +177,7 @@ sorttable = {
     for (var i=0; i<table.tBodies[0].rows.length; i++) {
       text = sorttable.getInnerText(table.tBodies[0].rows[i].cells[column]);
       if (text != '') {
-        //if (text.match(/^-?[£$¤]?[\d,.]+%?$/)) {
+        //if (text.match(/^-?[Â£$Â¤]?[\d,.]+%?$/)) {
           return sorttable.sort_numeric;
        // }
         // check for a date: dd/mm/yyyy or dd/mm/yy
@@ -505,7 +505,7 @@ var forEach = function(object, block, context) {
 <body>
 
 <TABLE border=1 class=sortable>
-<caption><a href=https://localhost.sk/backup-status.html>2021-01-11_06:00:00 vs 2021-01-10_06:00:00</a></caption>
+<caption><a href=https://x.y.z/backup-status.html>2021-01-11_06:00:00 vs 2021-01-10_06:00:00</a></caption>
 <TR><TD ALIGN=RIGHT><b>Server</TD><TD ALIGN=RIGHT><b>Duration</TD><TD ALIGN=RIGHT><b>Transf size</TD><TD ALIGN=RIGHT><b>Backup size</TD><TD ALIGN=RIGHT><b>Durat. &Delta;</TD><TD ALIGN=RIGHT><b>Transf size &Delta;</TD><TD ALIGN=RIGHT><b>Bkp Size &Delta;</b></TD></TR>
 <TR><TD ALIGN=RIGHT style=white-space: nowrap>amethyst</TD><TD ALIGN=RIGHT style=white-space: nowrap>1357 s</TD><TD ALIGN=RIGHT style=white-space: nowrap>12001 MB</TD><TD ALIGN=RIGHT style=white-space: nowrap>32019 MB</TD><TD ALIGN=RIGHT style=white-space: nowrap>-552 s</TD><TD ALIGN=RIGHT style=white-space: nowrap>181 MB</TD><TD ALIGN=RIGHT style=white-space: nowrap>-7782 MB</TD></TR>
 <TR><TD ALIGN=RIGHT style=white-space: nowrap>coral</TD><TD ALIGN=RIGHT style=white-space: nowrap>1031 s</TD><TD ALIGN=RIGHT style=white-space: nowrap>8054 MB</TD><TD ALIGN=RIGHT style=white-space: nowrap>28346 MB</TD><TD ALIGN=RIGHT style=white-space: nowrap>-379 s</TD><TD ALIGN=RIGHT style=white-space: nowrap>-36 MB</TD><TD ALIGN=RIGHT style=white-space: nowrap>72 MB</TD></TR>
