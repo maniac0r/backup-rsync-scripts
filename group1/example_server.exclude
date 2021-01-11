@@ -1,0 +1,5 @@
+proc/
+sys/
+run/
+tmp/
+dev/
