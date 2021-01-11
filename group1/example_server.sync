@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -z "$RSYNC" ] && RSYNC="rsync -av --progress --delete --delete-excluded"
+
+$RSYNC --exclude-from example_server.exclude root@example_server_ip/ example_server/ > $0.log
