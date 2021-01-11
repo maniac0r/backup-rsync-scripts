@@ -9,8 +9,8 @@ LOGF=$LOGF2
     exit 1
   else
     if [ "$LOGF" == "-a" ] ; then
-      for FILE in `ls /share/storage2/BACKUP2/customers/.log/*.csv` ; do
-        /share/storage2/BACKUP2/customers/parse-rsync-stats.sh.new "$FILE"
+      for FILE in `ls .log/*.csv` ; do
+        ./parse-rsync-stats.sh "$FILE"
       done
       exit 0
     fi
